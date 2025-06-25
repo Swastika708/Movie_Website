@@ -1,12 +1,68 @@
-# React + Vite
+📽️ MoviesLand 🎬
+A sleek movie search app built with React + Vite using the OMDB API. Browse random trending movies, search for your favorites, and enjoy a clean, modern UI—all powered by TailwindCSS.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Features
+🔍 Search through 1000+ movies using the OMDB API
+🎞️ Random movies on first load (random keywords)
+🌟 Shows rating, release year, and language
+📉 Handles missing posters gracefully
+🖼️ Beautiful Hero Section with background image
+📱 Fully responsive layout
+🔧 Easily customizable and deployable
 
-Currently, two official plugins are available:
+![Description](./public/image.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🛠️ Tech Stack
+React + Vite
+TailwindCSS
+OMDB API
+Git + GitHub
 
-## Expanding the ESLint configuration
+🔧 Installation & Setup
+Clone the repository: git clone https://github.com/your-username/movieapp.git
+cd movieapp
+Install dependencies:  npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Set your OMDB API key
+Create a .env.local file in the root
+VITE_OMDB_API_KEY= your_api_key_here
+
+Run the app: npm run dev
+
+🌐 Deployment (GitHub Pages / Vercel)
+GitHub Pages: Use vite.config.js to set the base path and deploy using gh-pages
+Vercel: Simply import your GitHub repo to https://vercel.com, and it handles everything
+
+📁 Folder Structure
+movieapp/
+│
+├── public/
+│   ├── no-movie.png        ← fallback image
+│   ├── cover.png           ← banner for README
+│   └── Screenshot 2025-06-25 214725.png ← screenshot
+│
+├── src/
+│   ├── components/         ← UI components
+│   ├── App.jsx             ← main logic
+│   └── ...
+│
+├── .env.local              ← API key
+├── vite.config.js
+└── README.md
+
+✨ Future Features
+🔥 Trending section using TMDB API
+🧠 Auto-suggestions while searching
+🎭 Genre filters
+❤️ Add to favorites (localStorage)
+🌍 Multi-language support
+
+🤝 Contributing
+Fork the repo
+Create your feature branch (git checkout -b feature-name)
+Commit your changes (git commit -m 'add feature')
+Push to the branch (git push origin feature-name)
+Open a Pull Request
+
+
+
